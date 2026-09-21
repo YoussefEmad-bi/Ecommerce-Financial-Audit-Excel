@@ -5,8 +5,7 @@ An exhaustive financial audit conducted on a transactional ledger of over **500,
 
 The audit successfully protected and accounted for **£1,754,901.91** in legitimate guest revenue that was at risk of accidental deletion, while establishing formal systemic remediation controls across IT and database engineering.
 
-📁 **Full Dataset & Workbook:** [Download / View Audited Ledger (Google Drive)](https://docs.google.com/spreadsheets/d/1GWauylt2vapb65AsnbZE3yw5EHUml1qm/edit?usp=drive_link&ouid=104650319061894159802&rtpof=true&sd=true)
-
+📁 **Full Dataset & Workbook:** [Download Audited Ledger (Excel)](https://drive.google.com/file/d/1GWauylt2vapb65AsnbZE3yw5EHUml1qm/view?usp=sharing)
 ---
 
 ## 🖼️ Executive Financial Dashboard

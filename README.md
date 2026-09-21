@@ -5,6 +5,8 @@ An exhaustive financial audit conducted on a transactional ledger of over **500,
 
 The audit successfully protected and accounted for **£1,754,901.91** in legitimate guest revenue that was at risk of accidental deletion, while establishing formal systemic remediation controls across IT and database engineering.
 
+📁 **Full Dataset & Workbook:** [Download / View Audited Ledger (Google Drive)](https://docs.google.com/spreadsheets/d/1GWauylt2vapb65AsnbZE3yw5EHUml1qm/edit?usp=drive_link&ouid=104650319061894159802&rtpof=true&sd=true)
+
 ---
 
 ## 🖼️ Executive Financial Dashboard
@@ -17,7 +19,7 @@ The transactional ledger was categorized across 5 systematic failure points (`AU
 
 | Audit Ref | Issue / Anomaly | Root Cause | Business & Financial Impact | IT / Systemic Remediation | Owner |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`AUD-01`** | Missing `CustomerID` | Guest checkout flows bypassing user account creation | £1.75M unassigned revenue; distorted customer LTV modeling | Generate mandatory guest UUID tokens & incentivize signup | Web / Marketing |
+| **`AUD-01`** | Missing `CustomerID` | Guest checkout flows bypassing user account creation | £1.75M unassigned revenue; distorts customer LTV modeling | Generate mandatory guest UUID tokens & incentivize signup | Web / Marketing |
 | **`AUD-02`** | Duplicate Records | Payment gateway retry loops and sync latency | Artificial inflation of order volume, sales units, and Gross Sales | Enforce composite UNIQUE constraint on (InvoiceNo, StockCode, Date) | DBA / Backend |
 | **`AUD-03`** | Negative Quantities | Return transactions embedded in sales ledger | Blurs gross sales figures and risks top-line distortion | Isolate cancellations into dedicated Refund schema linked to InvoiceNo | ERP / Finance IT |
 | **`AUD-04`** | Zero-Price Items | Damaged warehouse stock entered via POS | Distorts revenue metrics with warehouse shrinkage | Block 0.00 UnitPrice at POS; route write-offs strictly through WMS | Supply Chain / IT |

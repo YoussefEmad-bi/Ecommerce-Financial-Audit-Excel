@@ -38,3 +38,23 @@ The transactional ledger was categorized across 5 systematic failure points (`AU
 ## 🛠️ Tools & Techniques
 * **Microsoft Excel:** Data Auditing, Audit Logging, Text Transformation (`TRIM`, `PROPER`), Logic Gates (`IFS`, `AND`), Financial Aggregations (`SUBTOTAL`, `COUNTIF`).
 * **Data Governance:** Audit Trail creation, Source-to-Target mapping, Downstream Remediation Design.
+* ---
+
+## 🚀 Phase 2: Pivot Table Business Intelligence & Executive Dashboard
+
+Following the comprehensive data cleaning and financial audit, the transactional dataset (`Clean_Transactions`) was modeled through multidimensional **Pivot Tables** to extract strategic operational and commercial insights.
+
+### 🖼️ Executive Performance & Slicers Dashboard
+![Executive Pivot Dashboard](pivot_dashboard.png)
+
+### 📊 Strategic Findings & Commercial Insights
+1. **Geographic Revenue Concentration:**
+   * The **United Kingdom** represents **83.97%** of total gross revenue (£8.16M across 490,300 transactions), indicating substantial market dominance.
+   * **Secondary High-Yield Markets:** The Netherlands (£284.6K / 2.93%) and EIRE (£262.9K / 2.70%) demonstrate significantly higher Average Order Value (AOV) per transaction, highlighting key wholesale (B2B) expansion opportunities.
+
+2. **Core Merchandise Performance (Logistics Excluded):**
+   * Operational postage lines (`POSTAGE` and `DOTCOM POSTAGE`) were audited and filtered out of product reports to reflect true consumer merchandise demand.
+   * Top consumer merchandise generated **£781,022.63** across the Top 10 SKUs, led by **`REGENCY CAKESTAND 3 TIER`** (£164,459), **`WHITE HANGING HEART T-LIGHT HOLDER`** (£99,612), and **`PARTY BUNTING`** (£98,244).
+
+3. **Interactive Control Architecture:**
+   * Designed a decoupled `Executive_Dashboard` utilizing dynamic **Slicers** connected across analytical tables to segment performance by **Customer Type** (`Guest` vs `Registered`) and **Target Country** with real-time visual feedback.
